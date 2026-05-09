@@ -1,9 +1,3 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
-
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
-
 # 🛑 CRITICAL ISOLATION PROTOCOL (MASTER RULE) 🛑
 
 1. **NO INTERACTION WITH MAIN PROJECT REPO**: Under NO circumstances should any code, script, or agent action read from, write to, or otherwise interact with the original `flyfast` main project directory or its GitHub repository. All local work must be strictly contained within `/Users/ron/Developer/flyfast_v2`.
