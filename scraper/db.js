@@ -71,7 +71,9 @@ async function syncAirportData(airportCode, checkpointsData) {
 
       if (shouldWrite) {
         // Create a predictable document ID (e.g., "ATL_Domestic_Main_Checkpoint")
+        // Create a predictable document ID (e.g., "ATL_Domestic_Main_Checkpoint")
         const docId = `${airportCode}_${cp.name.replace(/[^a-zA-Z0-9]/g, '_')}`;
+        console.log(`[DEBUG] Attempting to write document with ID: ${docId}`);
         const docRef = logsRef.doc(docId);
         batch.set(docRef, payload);
         writesQueued++;
