@@ -19,47 +19,43 @@ async function scrapeDEN() {
     const page = await browser.newPage();
     await page.goto(sourceUrl, { waitUntil: 'networkidle2', timeout: 45000 });
     
+    // DEN loads wait times via JavaScript — wait for the .tsa cards to populate
+    await page.waitForSelector('.tsa .wait-num', { timeout: 15000 }).catch(() => {
+      console.warn('[DEN Adapter] .wait-num not found within timeout, proceeding anyway.');
+    });
+    
     console.log(`[DEN Adapter] Page loaded successfully. Extracting data...`);
     
     const checkpointsData = await page.evaluate(() => {
       const data = [];
-      // DEN uses .wp-block-column cards with .wait-num elements
-      const columns = document.querySelectorAll('.wp-block-column');
+      // DEN uses .tsa cards: each has .name (e.g. "East Security") and .wait-time-main entries
+      const tsaCards = document.querySelectorAll('.tsa');
       
-      columns.forEach(col => {
-        // Get checkpoint name from header (h2 or h3)
-        const header = col.querySelector('h2, h3');
-        if (!header) return;
+      tsaCards.forEach(card => {
+        const nameEl = card.querySelector('.name');
+        if (!nameEl) return;
+        const checkpointName = nameEl.innerText.trim();
         
-        const checkpointName = header.innerText.trim();
-        // Only process columns that look like security checkpoints
-        if (!checkpointName.toLowerCase().includes('security')) return;
+        // Each card has multiple .wait-time-main divs (Standard, PreCheck)
+        const waitEntries = card.querySelectorAll('.wait-time-main');
         
-        // Find all wait-num elements within this column
-        const waitNums = col.querySelectorAll('.wait-num');
-        // Find labels (Standard / PreCheck) — they appear as <p> tags before .wait-num
-        const paragraphs = col.querySelectorAll('p');
-        
-        let labels = [];
-        paragraphs.forEach(p => {
-          const text = p.innerText.trim().toLowerCase();
-          if (text.includes('standard') || text.includes('precheck') || text.includes('pre-check') || text.includes('pre✓')) {
-            labels.push(p.innerText.trim());
-          }
-        });
-        
-        waitNums.forEach((wn, i) => {
-          const waitText = wn.innerText.trim();
+        waitEntries.forEach(entry => {
+          const typeEl = entry.querySelector('.wait-type');
+          const numEl = entry.querySelector('.wait-num');
+          
+          if (!typeEl || !numEl) return;
+          
+          const waitType = typeEl.innerText.trim();
+          const waitText = numEl.innerText.trim();
+          
           // Parse ranges like "1-5" → take the higher number, or single "4" → 4
           const numbers = waitText.match(/(\d+)/g);
           if (!numbers) return;
           
-          // Use the max of the range for conservative estimate
           const waitMinutes = Math.max(...numbers.map(n => parseInt(n, 10)));
-          const label = labels[i] || (i === 0 ? 'Standard' : 'PreCheck');
           
           data.push({
-            name: `${checkpointName} - ${label}`,
+            name: `${checkpointName} - ${waitType}`,
             waitMinutes,
             status: 'Active'
           });
