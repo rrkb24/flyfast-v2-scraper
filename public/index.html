@@ -33,7 +33,7 @@
   <script>
     const JSON_URL = 'wait_times_v2.json';
 
-    fetch(JSON_URL)
+    fetch(JSON_URL + '?t=' + new Date().getTime())
       .then(r => r.json())
       .then(d => {
         document.getElementById('status').textContent =
