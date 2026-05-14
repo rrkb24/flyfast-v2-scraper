@@ -15,6 +15,7 @@
     .wait-low { color: #66bb6a; }
     .wait-med { color: #ffa726; }
     .wait-high { color: #ef5350; }
+    .wait-closed { color: #666; font-style: italic; }
     #status { color: #888; }
   </style>
 </head>
@@ -51,11 +52,12 @@
           for (const cp of d.airports[code]) {
             const tr = document.createElement('tr');
             const w = cp.waitTime;
-            const cls = w <= 5 ? 'wait-low' : w <= 15 ? 'wait-med' : 'wait-high';
+            const closed = cp.status === 'Closed' || w === null;
+            const cls = closed ? 'wait-closed' : w <= 5 ? 'wait-low' : w <= 15 ? 'wait-med' : 'wait-high';
             tr.innerHTML =
               '<td></td>' +
               '<td>' + cp.terminal + '</td>' +
-              '<td class="' + cls + '">' + w + '</td>';
+              '<td class="' + cls + '">' + (closed ? 'Closed' : w) + '</td>';
             tbody.appendChild(tr);
           }
         }

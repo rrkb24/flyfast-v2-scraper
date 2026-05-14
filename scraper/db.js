@@ -46,12 +46,13 @@ async function syncAirportData(airportCode, checkpointsData) {
     let cacheChanged = false;
 
     for (const cp of checkpointsData) {
-      if (cp.waitMinutes === null) continue; // Skip closed terminals
+      const isClosed = cp.waitMinutes === null || cp.status === 'Closed';
       
       const payload = {
         airport: airportCode,
         terminal: cp.name,
-        waitTime: cp.waitMinutes,
+        waitTime: isClosed ? null : cp.waitMinutes,
+        status: isClosed ? 'Closed' : 'Active',
         timestamp: admin.firestore.FieldValue.serverTimestamp(),
         timestampMs: currentMs
       };
@@ -63,8 +64,8 @@ async function syncAirportData(airportCode, checkpointsData) {
 
       if (lastRecord) {
         const timeDiffMinutes = (currentMs - (lastRecord.timestampMs || 0)) / (1000 * 60);
-        // Ignore if waitTime hasn't changed AND it's been less than 15 mins
-        if (lastRecord.waitTime === payload.waitTime && timeDiffMinutes < 15) {
+        // Write if: status changed, waitTime changed, OR it's been 15+ mins
+        if (lastRecord.waitTime === payload.waitTime && lastRecord.status === payload.status && timeDiffMinutes < 15) {
           shouldWrite = false;
         }
       }
@@ -78,7 +79,7 @@ async function syncAirportData(airportCode, checkpointsData) {
         writesQueued++;
 
         // Update local cache state
-        localCache[cacheKey] = { waitTime: payload.waitTime, timestampMs: currentMs };
+        localCache[cacheKey] = { waitTime: payload.waitTime, status: payload.status, timestampMs: currentMs };
         cacheChanged = true;
       }
     }
@@ -120,6 +121,7 @@ async function getAllWaitTimes() {
       id: doc.id,
       terminal: data.terminal,
       waitTime: data.waitTime,
+      status: data.status || 'Active',
       timestampMs: data.timestampMs || null
     });
   });
