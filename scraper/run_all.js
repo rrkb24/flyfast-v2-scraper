@@ -2,13 +2,15 @@
  * FlyFast V2 — Master Adapter Runner
  * 
  * Auto-discovers and runs every adapter in the /adapters directory.
- * The workflow YAML never needs to change when new airports are added.
+ * After all adapters finish, dumps Firestore data to public/wait_times_v2.json
+ * for the static HTML dashboard.
  */
 
 const fs = require('fs');
 const path = require('path');
 
 const ADAPTERS_DIR = path.join(__dirname, '..', 'adapters');
+const OUTPUT_FILE = path.join(__dirname, '..', 'public', 'wait_times_v2.json');
 
 async function runAll() {
   const files = fs.readdirSync(ADAPTERS_DIR).filter(f => f.endsWith('.js'));
@@ -55,6 +57,27 @@ async function runAll() {
   console.log(`\n========================================`);
   console.log(`[Runner] Finished: ${success} succeeded, ${failed} failed out of ${files.length} total.`);
   console.log(`========================================\n`);
+
+  // Dump Firestore data to static JSON for the dashboard
+  try {
+    console.log(`[Runner] Exporting Firestore data to ${OUTPUT_FILE}...`);
+    const { getAllWaitTimes } = require('./db');
+    const data = await getAllWaitTimes();
+
+    const payload = {
+      updated_at: new Date().toISOString(),
+      airport_count: Object.keys(data).length,
+      airports: data
+    };
+
+    const dir = path.dirname(OUTPUT_FILE);
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+
+    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(payload, null, 2));
+    console.log(`[Runner] Exported ${Object.keys(data).length} airports to wait_times_v2.json`);
+  } catch (err) {
+    console.error(`[Runner] JSON export failed: ${err.message}`);
+  }
 
   if (failed > 0) {
     process.exitCode = 1; // Signal partial failure but don't crash

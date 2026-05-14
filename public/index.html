@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlyFast V2 — Live Wait Times</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 960px; margin: 0 auto; padding: 20px; background: #111; color: #eee; }
+    h1 { margin-bottom: 4px; }
+    p.meta { color: #888; margin-top: 0; font-size: 14px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    th { text-align: left; padding: 8px; border-bottom: 2px solid #333; color: #aaa; font-size: 13px; text-transform: uppercase; }
+    td { padding: 6px 8px; border-bottom: 1px solid #222; }
+    tr:hover { background: #1a1a1a; }
+    .airport-header td { padding-top: 16px; font-weight: bold; font-size: 15px; color: #4fc3f7; border-bottom: 1px solid #333; }
+    .wait-low { color: #66bb6a; }
+    .wait-med { color: #ffa726; }
+    .wait-high { color: #ef5350; }
+    #status { color: #888; }
+  </style>
+</head>
+<body>
+  <h1>FlyFast V2</h1>
+  <p class="meta">Airport Security Wait Times</p>
+  <p id="status">Loading...</p>
+  <table>
+    <thead>
+      <tr><th>Airport</th><th>Checkpoint</th><th>Wait (min)</th></tr>
+    </thead>
+    <tbody id="data"></tbody>
+  </table>
+
+  <script>
+    const JSON_URL = 'wait_times_v2.json';
+
+    fetch(JSON_URL)
+      .then(r => r.json())
+      .then(d => {
+        document.getElementById('status').textContent =
+          'Updated: ' + new Date(d.updated_at).toLocaleString() + ' — ' + d.airport_count + ' airports';
+
+        const tbody = document.getElementById('data');
+        const codes = Object.keys(d.airports).sort();
+
+        for (const code of codes) {
+          // Airport header row
+          const hr = document.createElement('tr');
+          hr.className = 'airport-header';
+          hr.innerHTML = '<td colspan="3">' + code + '</td>';
+          tbody.appendChild(hr);
+
+          for (const cp of d.airports[code]) {
+            const tr = document.createElement('tr');
+            const w = cp.waitTime;
+            const cls = w <= 5 ? 'wait-low' : w <= 15 ? 'wait-med' : 'wait-high';
+            tr.innerHTML =
+              '<td></td>' +
+              '<td>' + cp.terminal + '</td>' +
+              '<td class="' + cls + '">' + w + '</td>';
+            tbody.appendChild(tr);
+          }
+        }
+      })
+      .catch(e => {
+        document.getElementById('status').textContent = 'Error loading data: ' + e.message;
+      });
+  </script>
+</body>
+</html>

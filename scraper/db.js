@@ -99,4 +99,32 @@ async function syncAirportData(airportCode, checkpointsData) {
   }
 }
 
-module.exports = { syncAirportData };
+/**
+ * Reads all wait_times documents from Firestore and returns them grouped by airport.
+ */
+async function getAllWaitTimes() {
+  if (!db) return {};
+
+  const snapshot = await db.collection(collectionName).get();
+  const grouped = {};
+
+  snapshot.docs.forEach(doc => {
+    const data = doc.data();
+    const code = data.airport || 'UNKNOWN';
+
+    if (!grouped[code]) {
+      grouped[code] = [];
+    }
+
+    grouped[code].push({
+      id: doc.id,
+      terminal: data.terminal,
+      waitTime: data.waitTime,
+      timestampMs: data.timestampMs || null
+    });
+  });
+
+  return grouped;
+}
+
+module.exports = { syncAirportData, getAllWaitTimes };
