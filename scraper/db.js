@@ -42,6 +42,28 @@ async function syncAirportData(airportCode, checkpointsData) {
   try {
     const logsRef = db.collection(collectionName);
     const batch = db.batch();
+    
+    // Auto-close missing checkpoints: query Firestore to find what's currently tracked.
+    // We must do this because GitHub Actions runners are ephemeral and lose localCache.
+    const currentScrapedNames = new Set(checkpointsData.map(cp => cp.name));
+    
+    try {
+      const existingDocs = await logsRef.where('airport', '==', airportCode).get();
+      existingDocs.forEach(doc => {
+        const data = doc.data();
+        if (data.terminal && !currentScrapedNames.has(data.terminal) && data.status !== 'Closed') {
+          console.log(`[${airportCode}] Checkpoint missing from page, marking as Closed: ${data.terminal}`);
+          checkpointsData.push({
+            name: data.terminal,
+            waitMinutes: null,
+            status: 'Closed'
+          });
+        }
+      });
+    } catch (e) {
+      console.error(`[${airportCode}] Failed to fetch existing docs for auto-close:`, e.message);
+    }
+
     let writesQueued = 0;
     let cacheChanged = false;
 
