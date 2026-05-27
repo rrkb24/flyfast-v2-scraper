@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26T23:50:57.421Z",
+  "updated_at": "2026-05-27T02:07:19.681Z",
   "airport_count": 28,
   "airports": {
     "ATL": [
@@ -36,28 +36,28 @@
         "terminal": "Domestic – Lower North",
         "waitTime": null,
         "status": "Closed",
-        "timestampMs": 1779839333804
+        "timestampMs": 1779847511410
       },
       {
         "id": "ATL_Domestic___Main",
         "terminal": "Domestic – Main",
-        "waitTime": 27,
+        "waitTime": 6,
         "status": "Active",
-        "timestampMs": 1779839333804
+        "timestampMs": 1779847511410
       },
       {
         "id": "ATL_Domestic___North",
         "terminal": "Domestic – North",
-        "waitTime": 11,
-        "status": "Active",
-        "timestampMs": 1779839333804
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847511410
       },
       {
         "id": "ATL_Domestic___South",
         "terminal": "Domestic – South",
-        "waitTime": 0,
-        "status": "Active",
-        "timestampMs": 1779839333804
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847511410
       },
       {
         "id": "ATL_International_Main_Checkpoint",
@@ -69,9 +69,9 @@
       {
         "id": "ATL_International___Main",
         "terminal": "International – Main",
-        "waitTime": 7,
+        "waitTime": 2,
         "status": "Active",
-        "timestampMs": 1779839333804
+        "timestampMs": 1779847511410
       }
     ],
     "BNA": [
@@ -80,151 +80,151 @@
         "terminal": "Main Checkpoint",
         "waitTime": 10,
         "status": "Active",
-        "timestampMs": 1779839340609
+        "timestampMs": 1779847517520
       }
     ],
     "BOS": [
       {
         "id": "BOS_Checkpoint_1__A_Gates___Standard",
         "terminal": "Checkpoint 1: A Gates - Standard",
-        "waitTime": 6,
-        "status": "Active",
-        "timestampMs": 1779839353136
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847531348
       },
       {
         "id": "BOS_Checkpoint_1__A_Gates___TSA_PreCheck",
         "terminal": "Checkpoint 1: A Gates - TSA PreCheck",
-        "waitTime": 1,
-        "status": "Active",
-        "timestampMs": 1779839353136
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847531348
       },
       {
         "id": "BOS_Checkpoint_2__A_Gates_PreCheck_Only___TSA_PreCheck",
         "terminal": "Checkpoint 2: A Gates PreCheck Only - TSA PreCheck",
-        "waitTime": 3,
-        "status": "Active",
-        "timestampMs": 1779839353136
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847531348
       },
       {
         "id": "BOS_Checkpoint_3__Gates_B1___B22___Standard",
         "terminal": "Checkpoint 3: Gates B1 - B22 - Standard",
         "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839353136
+        "timestampMs": 1779847531348
       },
       {
         "id": "BOS_Checkpoint_3__Gates_B1___B22___TSA_PreCheck",
         "terminal": "Checkpoint 3: Gates B1 - B22 - TSA PreCheck",
         "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839353136
+        "timestampMs": 1779847531348
       },
       {
         "id": "BOS_Checkpoint_4__Gates_B23___40___Standard",
         "terminal": "Checkpoint 4: Gates B23 - 40 - Standard",
-        "waitTime": 3,
+        "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839353136
+        "timestampMs": 1779847531348
       },
       {
         "id": "BOS_Checkpoint_4__Gates_B23___40___TSA_PreCheck",
         "terminal": "Checkpoint 4: Gates B23 - 40 - TSA PreCheck",
         "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839353136
+        "timestampMs": 1779847531348
       },
       {
         "id": "BOS_Checkpoint_5__Terminal_C___Standard",
         "terminal": "Checkpoint 5: Terminal C - Standard",
-        "waitTime": 5,
+        "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839353136
+        "timestampMs": 1779847531348
       },
       {
         "id": "BOS_Checkpoint_5__Terminal_C___TSA_PreCheck",
         "terminal": "Checkpoint 5: Terminal C - TSA PreCheck",
-        "waitTime": 4,
+        "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839353136
+        "timestampMs": 1779847531348
       },
       {
         "id": "BOS_Checkpoint_6__All_E_Gates___Standard",
         "terminal": "Checkpoint 6: All E Gates - Standard",
         "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839353136
+        "timestampMs": 1779847531348
       },
       {
         "id": "BOS_Checkpoint_7__All_E_Gates___Standard",
         "terminal": "Checkpoint 7: All E Gates - Standard",
-        "waitTime": 2,
+        "waitTime": 6,
         "status": "Active",
-        "timestampMs": 1779839353136
+        "timestampMs": 1779847531348
       },
       {
         "id": "BOS_Checkpoint_7__All_E_Gates___TSA_PreCheck",
         "terminal": "Checkpoint 7: All E Gates - TSA PreCheck",
         "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839353136
+        "timestampMs": 1779847531348
       }
     ],
     "BWI": [
       {
         "id": "BWI_Checkpoint_A___Standard",
         "terminal": "Checkpoint A - Standard",
-        "waitTime": 1,
-        "status": "Active",
-        "timestampMs": 1779839355378
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847533786
       },
       {
         "id": "BWI_Checkpoint_A___TSA_PreCheck",
         "terminal": "Checkpoint A - TSA PreCheck",
         "waitTime": null,
         "status": "Closed",
-        "timestampMs": 1779839355378
+        "timestampMs": 1779847533786
       },
       {
         "id": "BWI_Checkpoint_B___Standard",
         "terminal": "Checkpoint B - Standard",
-        "waitTime": 1,
-        "status": "Active",
-        "timestampMs": 1779839355378
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847533786
       },
       {
         "id": "BWI_Checkpoint_B___TSA_PreCheck",
         "terminal": "Checkpoint B - TSA PreCheck",
         "waitTime": null,
         "status": "Closed",
-        "timestampMs": 1779839355378
+        "timestampMs": 1779847533786
       },
       {
         "id": "BWI_Checkpoint_C___Standard",
         "terminal": "Checkpoint C - Standard",
         "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839355378
+        "timestampMs": 1779847533786
       },
       {
         "id": "BWI_Checkpoint_C___TSA_PreCheck",
         "terminal": "Checkpoint C - TSA PreCheck",
         "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839355378
+        "timestampMs": 1779847533786
       },
       {
         "id": "BWI_Checkpoint_D_E___Standard",
         "terminal": "Checkpoint D/E - Standard",
         "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839355378
+        "timestampMs": 1779847533786
       },
       {
         "id": "BWI_Checkpoint_D_E___TSA_PreCheck",
         "terminal": "Checkpoint D/E - TSA PreCheck",
         "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839355378
+        "timestampMs": 1779847533786
       }
     ],
     "CLE": [
@@ -233,7 +233,7 @@
         "terminal": "Central Checkpoint",
         "waitTime": 15,
         "status": "Active",
-        "timestampMs": 1779839357381
+        "timestampMs": 1779847536129
       },
       {
         "id": "CLE_Estimated_TSA_Wait_Times",
@@ -247,60 +247,60 @@
         "terminal": "North Checkpoint",
         "waitTime": null,
         "status": "Closed",
-        "timestampMs": 1779839357381
+        "timestampMs": 1779847536129
       },
       {
         "id": "CLE_South_Checkpoint",
         "terminal": "South Checkpoint",
         "waitTime": null,
         "status": "Closed",
-        "timestampMs": 1779839357381
+        "timestampMs": 1779847536129
       }
     ],
     "CLT": [
       {
         "id": "CLT_Checkpoint_1___Standard",
         "terminal": "Checkpoint 1 – Standard",
-        "waitTime": 10,
+        "waitTime": 2,
         "status": "Active",
-        "timestampMs": 1779839361096
+        "timestampMs": 1779847540656
       },
       {
         "id": "CLT_Checkpoint_2___Standard",
         "terminal": "Checkpoint 2 – Standard",
         "waitTime": 10,
         "status": "Active",
-        "timestampMs": 1779839361096
+        "timestampMs": 1779847540656
       },
       {
         "id": "CLT_Checkpoint_2___TSA_Pre_",
         "terminal": "Checkpoint 2 – TSA Pre√",
         "waitTime": 10,
         "status": "Active",
-        "timestampMs": 1779839361096
+        "timestampMs": 1779847540656
       },
       {
         "id": "CLT_Checkpoint_3___Standard",
         "terminal": "Checkpoint 3 – Standard",
-        "waitTime": 10,
-        "status": "Active",
-        "timestampMs": 1779839361096
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847540656
       }
     ],
     "CVG": [
       {
         "id": "CVG_CVG_Checkpoint___Standard",
         "terminal": "CVG Checkpoint – Standard",
-        "waitTime": 5,
-        "status": "Active",
-        "timestampMs": 1779839364673
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847544432
       },
       {
         "id": "CVG_CVG_Checkpoint___TSA_Pre_",
         "terminal": "CVG Checkpoint – TSA Pre√",
-        "waitTime": 21,
+        "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839364673
+        "timestampMs": 1779847544432
       },
       {
         "id": "CVG_east",
@@ -316,90 +316,90 @@
         "terminal": "Security Checkpoint - General",
         "waitTime": null,
         "status": "Closed",
-        "timestampMs": 1779839364893
+        "timestampMs": 1779847544807
       },
       {
         "id": "DAL_Security_Checkpoint___TSA_PreCheck",
         "terminal": "Security Checkpoint - TSA PreCheck",
         "waitTime": null,
         "status": "Closed",
-        "timestampMs": 1779839364893
+        "timestampMs": 1779847544807
       }
     ],
     "DCA": [
       {
         "id": "DCA_Terminal_1___Standard",
         "terminal": "Terminal 1 - Standard",
-        "waitTime": 5,
+        "waitTime": 4,
         "status": "Active",
-        "timestampMs": 1779839367502
+        "timestampMs": 1779847547976
       },
       {
         "id": "DCA_Terminal_2_North___Standard",
         "terminal": "Terminal 2 North - Standard",
         "waitTime": 5,
         "status": "Active",
-        "timestampMs": 1779839367502
+        "timestampMs": 1779847547976
       },
       {
         "id": "DCA_Terminal_2_North___TSA_PreCheck",
         "terminal": "Terminal 2 North - TSA PreCheck",
         "waitTime": 5,
         "status": "Active",
-        "timestampMs": 1779839367502
+        "timestampMs": 1779847547976
       },
       {
         "id": "DCA_Terminal_2_South___Standard",
         "terminal": "Terminal 2 South - Standard",
-        "waitTime": 5,
+        "waitTime": 4,
         "status": "Active",
-        "timestampMs": 1779839367502
+        "timestampMs": 1779847547976
       },
       {
         "id": "DCA_Terminal_2_South___TSA_PreCheck",
         "terminal": "Terminal 2 South - TSA PreCheck",
-        "waitTime": 5,
+        "waitTime": 4,
         "status": "Active",
-        "timestampMs": 1779839367502
+        "timestampMs": 1779847547976
       }
     ],
     "DEN": [
       {
         "id": "DEN_East_Security___PreCheck",
         "terminal": "East Security - PreCheck",
-        "waitTime": 1,
-        "status": "Active",
-        "timestampMs": 1779839370119
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847551096
       },
       {
         "id": "DEN_East_Security___Standard",
         "terminal": "East Security - Standard",
-        "waitTime": 1,
-        "status": "Active",
-        "timestampMs": 1779839370119
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847551096
       },
       {
         "id": "DEN_West_Security___PreCheck",
         "terminal": "West Security - PreCheck",
         "waitTime": 0,
         "status": "Active",
-        "timestampMs": 1779839370119
+        "timestampMs": 1779847551096
       },
       {
         "id": "DEN_West_Security___Standard",
         "terminal": "West Security - Standard",
         "waitTime": 0,
         "status": "Active",
-        "timestampMs": 1779839370119
+        "timestampMs": 1779847551096
       }
     ],
     "DFW": [
       {
         "id": "DFW_A12___General",
         "terminal": "A12 - General",
-        "waitTime": 2,
-        "status": "Active",
-        "timestampMs": 1779839376967
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847557357
       },
       {
         "id": "DFW_A12___Priority",
@@ -418,9 +418,9 @@
       {
         "id": "DFW_A21___General",
         "terminal": "A21 - General",
-        "waitTime": 2,
+        "waitTime": 5,
         "status": "Active",
-        "timestampMs": 1779839376967
+        "timestampMs": 1779847557357
       },
       {
         "id": "DFW_A21___Priority",
@@ -439,9 +439,9 @@
       {
         "id": "DFW_A35___General",
         "terminal": "A35 - General",
-        "waitTime": 2,
-        "status": "Active",
-        "timestampMs": 1779839376967
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847557357
       },
       {
         "id": "DFW_A35___Priority",
@@ -460,9 +460,9 @@
       {
         "id": "DFW_B30___General",
         "terminal": "B30 - General",
-        "waitTime": 2,
+        "waitTime": 0,
         "status": "Active",
-        "timestampMs": 1779839376967
+        "timestampMs": 1779847557357
       },
       {
         "id": "DFW_B30___Priority",
@@ -481,9 +481,9 @@
       {
         "id": "DFW_B9___General",
         "terminal": "B9 - General",
-        "waitTime": 11,
-        "status": "Active",
-        "timestampMs": 1779839376967
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847557357
       },
       {
         "id": "DFW_B9___Priority",
@@ -504,7 +504,7 @@
         "terminal": "C10 - General",
         "waitTime": null,
         "status": "Closed",
-        "timestampMs": 1779839376967
+        "timestampMs": 1779847557357
       },
       {
         "id": "DFW_C10___Priority",
@@ -523,9 +523,9 @@
       {
         "id": "DFW_C11___General",
         "terminal": "C11 - General",
-        "waitTime": 17,
-        "status": "Active",
-        "timestampMs": 1779839376967
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847557357
       },
       {
         "id": "DFW_C11___Priority",
@@ -544,9 +544,9 @@
       {
         "id": "DFW_C20___General",
         "terminal": "C20 - General",
-        "waitTime": 7,
+        "waitTime": 2,
         "status": "Active",
-        "timestampMs": 1779839376967
+        "timestampMs": 1779847557357
       },
       {
         "id": "DFW_C20___Standard",
@@ -565,9 +565,9 @@
       {
         "id": "DFW_D18___General",
         "terminal": "D18 - General",
-        "waitTime": 2,
+        "waitTime": 33,
         "status": "Active",
-        "timestampMs": 1779839376967
+        "timestampMs": 1779847557357
       },
       {
         "id": "DFW_D18___Standard",
@@ -579,9 +579,9 @@
       {
         "id": "DFW_D22___General",
         "terminal": "D22 - General",
-        "waitTime": 2,
-        "status": "Active",
-        "timestampMs": 1779839376967
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847557357
       },
       {
         "id": "DFW_D22___Standard",
@@ -593,9 +593,9 @@
       {
         "id": "DFW_D30___General",
         "terminal": "D30 - General",
-        "waitTime": null,
-        "status": "Closed",
-        "timestampMs": 1779839376967
+        "waitTime": 0,
+        "status": "Active",
+        "timestampMs": 1779847557357
       },
       {
         "id": "DFW_D30___Standard",
@@ -614,9 +614,9 @@
       {
         "id": "DFW_E18___General",
         "terminal": "E18 - General",
-        "waitTime": 2,
+        "waitTime": 11,
         "status": "Active",
-        "timestampMs": 1779839376967
+        "timestampMs": 1779847557357
       },
       {
         "id": "DFW_E18___Standard",
@@ -628,9 +628,9 @@
       {
         "id": "DFW_E33___General",
         "terminal": "E33 - General",
-        "waitTime": 2,
-        "status": "Active",
-        "timestampMs": 1779839376967
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847557357
       },
       {
         "id": "DFW_E33___Priority",
@@ -649,9 +649,9 @@
       {
         "id": "DFW_E8___General",
         "terminal": "E8 - General",
-        "waitTime": 2,
-        "status": "Active",
-        "timestampMs": 1779839376967
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847557357
       },
       {
         "id": "DFW_E8___Priority",
@@ -720,79 +720,79 @@
         "terminal": "Terminal A North - Standard",
         "waitTime": 3,
         "status": "Active",
-        "timestampMs": 1779839388540
+        "timestampMs": 1779847568203
       },
       {
         "id": "IAH_Terminal_A_North___TSA_PreCheck",
         "terminal": "Terminal A North - TSA PreCheck",
         "waitTime": 3,
         "status": "Active",
-        "timestampMs": 1779839388540
+        "timestampMs": 1779847568203
       },
       {
         "id": "IAH_Terminal_A_South___Standard",
         "terminal": "Terminal A South - Standard",
         "waitTime": 3,
         "status": "Active",
-        "timestampMs": 1779839388540
+        "timestampMs": 1779847568203
       },
       {
         "id": "IAH_Terminal_C_North___Premier",
         "terminal": "Terminal C North - Premier",
-        "waitTime": 5,
+        "waitTime": 3,
         "status": "Active",
-        "timestampMs": 1779839388540
+        "timestampMs": 1779847568203
       },
       {
         "id": "IAH_Terminal_C_North___TSA_PreCheck",
         "terminal": "Terminal C North - TSA PreCheck",
         "waitTime": 3,
         "status": "Active",
-        "timestampMs": 1779839388540
+        "timestampMs": 1779847568203
       },
       {
         "id": "IAH_Terminal_C_South___Standard",
         "terminal": "Terminal C South - Standard",
-        "waitTime": 9,
+        "waitTime": 5,
         "status": "Active",
-        "timestampMs": 1779839388540
+        "timestampMs": 1779847568203
       },
       {
         "id": "IAH_Terminal_D___Standard",
         "terminal": "Terminal D - Standard",
-        "waitTime": 8,
+        "waitTime": 5,
         "status": "Active",
-        "timestampMs": 1779839388540
+        "timestampMs": 1779847568203
       },
       {
         "id": "IAH_Terminal_E___Standard",
         "terminal": "Terminal E - Standard",
-        "waitTime": 12,
+        "waitTime": 5,
         "status": "Active",
-        "timestampMs": 1779839388540
+        "timestampMs": 1779847568203
       },
       {
         "id": "IAH_Terminal_E___TSA_PreCheck",
         "terminal": "Terminal E - TSA PreCheck",
-        "waitTime": 7,
+        "waitTime": 5,
         "status": "Active",
-        "timestampMs": 1779839388540
+        "timestampMs": 1779847568203
       }
     ],
     "JAX": [
       {
         "id": "JAX_JAX_Checkpoint___Standard",
         "terminal": "JAX Checkpoint - Standard",
-        "waitTime": 3,
-        "status": "Active",
-        "timestampMs": 1779839390932
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847570420
       },
       {
         "id": "JAX_JAX_Checkpoint___TSA_PreCheck",
         "terminal": "JAX Checkpoint - TSA PreCheck",
-        "waitTime": 3,
-        "status": "Active",
-        "timestampMs": 1779839390932
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847570420
       }
     ],
     "JFK": [
@@ -806,9 +806,9 @@
       {
         "id": "JFK_Terminal_1___Standard",
         "terminal": "Terminal 1 - Standard",
-        "waitTime": 16,
+        "waitTime": 20,
         "status": "Active",
-        "timestampMs": 1779839397489
+        "timestampMs": 1779847577626
       },
       {
         "id": "JFK_Terminal_1___TSA_PreCheck",
@@ -834,9 +834,9 @@
       {
         "id": "JFK_Terminal_4___Standard",
         "terminal": "Terminal 4 - Standard",
-        "waitTime": 25,
+        "waitTime": 7,
         "status": "Active",
-        "timestampMs": 1779839397489
+        "timestampMs": 1779847577626
       },
       {
         "id": "JFK_Terminal_4___TSA_PreCheck",
@@ -869,9 +869,9 @@
       {
         "id": "JFK_Terminal_5___Standard",
         "terminal": "Terminal 5 - Standard",
-        "waitTime": 12,
+        "waitTime": 5,
         "status": "Active",
-        "timestampMs": 1779839397489
+        "timestampMs": 1779847577626
       },
       {
         "id": "JFK_Terminal_5___TSA_PreCheck",
@@ -897,9 +897,9 @@
       {
         "id": "JFK_Terminal_7___Standard",
         "terminal": "Terminal 7 - Standard",
-        "waitTime": 4,
+        "waitTime": 7,
         "status": "Active",
-        "timestampMs": 1779839397489
+        "timestampMs": 1779847577626
       },
       {
         "id": "JFK_Terminal_7___TSA_PreCheck",
@@ -918,9 +918,9 @@
       {
         "id": "JFK_Terminal_8___Standard",
         "terminal": "Terminal 8 - Standard",
-        "waitTime": 22,
+        "waitTime": 11,
         "status": "Active",
-        "timestampMs": 1779839397489
+        "timestampMs": 1779847577626
       },
       {
         "id": "JFK_Terminal_8___TSA_PreCheck",
@@ -1008,23 +1008,23 @@
         "terminal": "TBIT - Standard",
         "waitTime": 4,
         "status": "Active",
-        "timestampMs": 1779839408925
+        "timestampMs": 1779847589270
       },
       {
         "id": "LAX_TBIT___TSA_PreCheck",
         "terminal": "TBIT - TSA PreCheck",
-        "waitTime": 3,
+        "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839408925
+        "timestampMs": 1779847589270
       }
     ],
     "LGA": [
       {
         "id": "LGA_Terminal_B___Standard",
         "terminal": "Terminal B - Standard",
-        "waitTime": 2,
-        "status": "Active",
-        "timestampMs": 1779839413995
+        "waitTime": null,
+        "status": "Closed",
+        "timestampMs": 1779847594382
       },
       {
         "id": "LGA_Terminal_B___TSA_PreCheck",
@@ -1036,9 +1036,9 @@
       {
         "id": "LGA_Terminal_C___Standard",
         "terminal": "Terminal C - Standard",
-        "waitTime": 2,
+        "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839413995
+        "timestampMs": 1779847594382
       },
       {
         "id": "LGA_Terminal_C___TSA_PreCheck",
@@ -1080,44 +1080,44 @@
       {
         "id": "MCO_Terminal_A_B___Gates_1_59___Standard",
         "terminal": "Terminal A/B - Gates 1-59 - Standard",
-        "waitTime": 7,
+        "waitTime": 2,
         "status": "Active",
-        "timestampMs": 1779839419047
+        "timestampMs": 1779847599812
       },
       {
         "id": "MCO_Terminal_A_B___Gates_1_59___TSA_PreCheck",
         "terminal": "Terminal A/B - Gates 1-59 - TSA PreCheck",
         "waitTime": 2,
         "status": "Active",
-        "timestampMs": 1779839419047
+        "timestampMs": 1779847599812
       },
       {
         "id": "MCO_Terminal_A_B___Gates_70_129___Standard",
         "terminal": "Terminal A/B - Gates 70-129 - Standard",
-        "waitTime": 5,
+        "waitTime": 2,
         "status": "Active",
-        "timestampMs": 1779839419047
+        "timestampMs": 1779847599812
       },
       {
         "id": "MCO_Terminal_A_B___Gates_70_129___TSA_PreCheck",
         "terminal": "Terminal A/B - Gates 70-129 - TSA PreCheck",
-        "waitTime": 3,
+        "waitTime": 2,
         "status": "Active",
-        "timestampMs": 1779839419047
+        "timestampMs": 1779847599812
       },
       {
         "id": "MCO_Terminal_C___Standard",
         "terminal": "Terminal C - Standard",
-        "waitTime": 12,
+        "waitTime": 3,
         "status": "Active",
-        "timestampMs": 1779839419047
+        "timestampMs": 1779847599812
       },
       {
         "id": "MCO_Terminal_C___TSA_PreCheck",
         "terminal": "Terminal C - TSA PreCheck",
-        "waitTime": 3,
+        "waitTime": 2,
         "status": "Active",
-        "timestampMs": 1779839419047
+        "timestampMs": 1779847599812
       }
     ],
     "MIA": [
@@ -1147,7 +1147,7 @@
         "terminal": "Checkpoint 1 - TSA PreCheck",
         "waitTime": null,
         "status": "Closed",
-        "timestampMs": 1779839424782
+        "timestampMs": 1779847606486
       }
     ],
     "MSP": [
@@ -1184,14 +1184,14 @@
         "terminal": "Terminal 1 - Standard",
         "waitTime": null,
         "status": "Closed",
-        "timestampMs": 1779839429518
+        "timestampMs": 1779847611340
       },
       {
         "id": "MSP_Terminal_2___Standard",
         "terminal": "Terminal 2 - Standard",
         "waitTime": 2,
         "status": "Active",
-        "timestampMs": 1779839429518
+        "timestampMs": 1779847611340
       }
     ],
     "OMA": [
@@ -1228,7 +1228,7 @@
         "terminal": "Concourse A 5-10 minutes - Standard",
         "waitTime": 10,
         "status": "Active",
-        "timestampMs": 1779839433498
+        "timestampMs": 1779847615424
       },
       {
         "id": "OMA_Concourse_A__South_",
@@ -1242,7 +1242,7 @@
         "terminal": "Concourse B 0-5 minutes - Standard",
         "waitTime": null,
         "status": "Closed",
-        "timestampMs": 1779839433498
+        "timestampMs": 1779847615424
       },
       {
         "id": "OMA_Concourse_B_10_15_minutes___Standard",
@@ -1284,30 +1284,30 @@
       {
         "id": "PDX_Gates_B_C___Standard",
         "terminal": "Gates B C - Standard",
-        "waitTime": 7,
+        "waitTime": 6,
         "status": "Active",
-        "timestampMs": 1779839438834
+        "timestampMs": 1779847620707
       },
       {
         "id": "PDX_Gates_B_C___TSA_PreCheck",
         "terminal": "Gates B C - TSA PreCheck",
-        "waitTime": 4,
+        "waitTime": 3,
         "status": "Active",
-        "timestampMs": 1779839438834
+        "timestampMs": 1779847620707
       },
       {
         "id": "PDX_Gates_D_E___Standard",
         "terminal": "Gates D E - Standard",
-        "waitTime": 7,
+        "waitTime": 5,
         "status": "Active",
-        "timestampMs": 1779839438834
+        "timestampMs": 1779847620707
       },
       {
         "id": "PDX_Gates_D_E___TSA_PreCheck",
         "terminal": "Gates D E - TSA PreCheck",
-        "waitTime": 4,
+        "waitTime": 3,
         "status": "Active",
-        "timestampMs": 1779839438834
+        "timestampMs": 1779847620707
       }
     ],
     "PHL": [
@@ -1323,14 +1323,14 @@
         "terminal": "TSA PreCheck is available at Terminals A-West 1, A-East, C and D/E.  Non PreCheck passengers may use all security checkpoints except for Terminal C. - TSA PreCheck",
         "waitTime": 10,
         "status": "Active",
-        "timestampMs": 1779839445926
+        "timestampMs": 1779847627945
       },
       {
         "id": "PHL_Terminal_A_East___Standard",
         "terminal": "Terminal A-East - Standard",
-        "waitTime": 13,
+        "waitTime": 3,
         "status": "Active",
-        "timestampMs": 1779839445926
+        "timestampMs": 1779847627945
       },
       {
         "id": "PHL_Terminal_A_East___TSA_PreCheck",
@@ -1344,14 +1344,14 @@
         "terminal": "Terminal A-West 1 - TSA PreCheck",
         "waitTime": 10,
         "status": "Active",
-        "timestampMs": 1779839445926
+        "timestampMs": 1779847627945
       },
       {
         "id": "PHL_Terminal_A_West_2___Standard",
         "terminal": "Terminal A-West 2 - Standard",
-        "waitTime": 4,
+        "waitTime": 3,
         "status": "Active",
-        "timestampMs": 1779839445926
+        "timestampMs": 1779847627945
       },
       {
         "id": "PHL_Terminal_A_West___Standard",
@@ -1363,23 +1363,23 @@
       {
         "id": "PHL_Terminal_B___Standard",
         "terminal": "Terminal B - Standard",
-        "waitTime": 4,
+        "waitTime": 3,
         "status": "Active",
-        "timestampMs": 1779839445926
+        "timestampMs": 1779847627945
       },
       {
         "id": "PHL_Terminal_C___TSA_PreCheck",
         "terminal": "Terminal C - TSA PreCheck",
         "waitTime": 2,
         "status": "Active",
-        "timestampMs": 1779839445926
+        "timestampMs": 1779847627945
       },
       {
         "id": "PHL_Terminal_D_E___Standard",
         "terminal": "Terminal D/E - Standard",
         "waitTime": 3,
         "status": "Active",
-        "timestampMs": 1779839445926
+        "timestampMs": 1779847627945
       },
       {
         "id": "PHL_Terminal_D_E___TSA_PreCheck",
@@ -1393,51 +1393,51 @@
         "terminal": "Terminal F - Standard",
         "waitTime": 3,
         "status": "Active",
-        "timestampMs": 1779839445926
+        "timestampMs": 1779847627945
       }
     ],
     "PHX": [
       {
         "id": "PHX_Terminal_3___Checkpoint___Standard",
         "terminal": "Terminal 3 - Checkpoint - Standard",
-        "waitTime": 8,
+        "waitTime": 6,
         "status": "Active",
-        "timestampMs": 1779839451351
+        "timestampMs": 1779847632866
       },
       {
         "id": "PHX_Terminal_4_Directions___Get_through_security_checkpoints_faster_using_PHXRESERVE____Standard",
         "terminal": "Terminal 4 Directions - Get through security checkpoints faster using PHXRESERVE. - Standard",
         "waitTime": 3,
         "status": "Active",
-        "timestampMs": 1779839451351
+        "timestampMs": 1779847632866
       },
       {
         "id": "PHX_Terminal_4___Checkpoint_A___Standard",
         "terminal": "Terminal 4 - Checkpoint A - Standard",
-        "waitTime": 7,
+        "waitTime": 8,
         "status": "Active",
-        "timestampMs": 1779839451351
+        "timestampMs": 1779847632866
       },
       {
         "id": "PHX_Terminal_4___Checkpoint_B___Standard",
         "terminal": "Terminal 4 - Checkpoint B - Standard",
-        "waitTime": 7,
+        "waitTime": 6,
         "status": "Active",
-        "timestampMs": 1779839451351
+        "timestampMs": 1779847632866
       },
       {
         "id": "PHX_Terminal_4___Checkpoint_C___Standard",
         "terminal": "Terminal 4 - Checkpoint C - Standard",
-        "waitTime": 9,
+        "waitTime": 8,
         "status": "Active",
-        "timestampMs": 1779839451351
+        "timestampMs": 1779847632866
       },
       {
         "id": "PHX_Terminal_4___Checkpoint_D___Standard",
         "terminal": "Terminal 4 - Checkpoint D - Standard",
         "waitTime": 8,
         "status": "Active",
-        "timestampMs": 1779839451351
+        "timestampMs": 1779847632866
       }
     ],
     "PIT": [
@@ -1446,28 +1446,28 @@
         "terminal": "Main Checkpoint - CLEAR",
         "waitTime": 0,
         "status": "Active",
-        "timestampMs": 1779839457102
+        "timestampMs": 1779847639226
       },
       {
         "id": "PIT_Main_Checkpoint___Priority",
         "terminal": "Main Checkpoint - Priority",
-        "waitTime": 0,
+        "waitTime": 1,
         "status": "Active",
-        "timestampMs": 1779839457102
+        "timestampMs": 1779847639226
       },
       {
         "id": "PIT_Main_Checkpoint___Standard",
         "terminal": "Main Checkpoint - Standard",
         "waitTime": 0,
         "status": "Active",
-        "timestampMs": 1779839457102
+        "timestampMs": 1779847639226
       },
       {
         "id": "PIT_Main_Checkpoint___TSA_PreCheck",
         "terminal": "Main Checkpoint - TSA PreCheck",
         "waitTime": 0,
         "status": "Active",
-        "timestampMs": 1779839457102
+        "timestampMs": 1779847639226
       }
     ],
     "SEA": [
