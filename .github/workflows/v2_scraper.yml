@@ -18,13 +18,12 @@ jobs:
           node-version: '24'
       - name: Install Dependencies
         run: npm install
-      - name: Ensure Puppeteer Chrome is Installed
-        run: |
-          rm -rf ~/.cache/puppeteer
-          node node_modules/puppeteer/install.mjs
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: 'true'
       - name: Run All Adapters
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
         run: node scraper/run_all.js
       - name: Commit Updated Wait Times JSON
         run: |
