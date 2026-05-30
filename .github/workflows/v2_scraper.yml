@@ -21,7 +21,7 @@ jobs:
       - name: Ensure Puppeteer Chrome is Installed
         run: |
           rm -rf ~/.cache/puppeteer
-          npx puppeteer install
+          node node_modules/puppeteer/install.mjs
       - name: Run All Adapters
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
